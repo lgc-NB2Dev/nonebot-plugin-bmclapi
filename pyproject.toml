@@ -2,7 +2,7 @@
 name = "nonebot-plugin-bmclapi"
 dynamic = ["version"]
 description = "Get OpenBMCLAPI status in chat apps."
-authors = [{ name = "student_2333", email = "lgc2333@126.com" }]
+authors = [{ name = "student_2333", email = "lgc2333@126.com" } , { name = "XieXiLin", email = "support@xiexilin.com" }]
 dependencies = [
     "nonebot2>=2.0.0",
     "pydantic>=1.10.4,<2",
