@@ -5,8 +5,9 @@ description = "Get OpenBMCLAPI status in chat apps."
 authors = [{ name = "student_2333", email = "lgc2333@126.com" } , { name = "XieXiLin", email = "support@xiexilin.com" }]
 dependencies = [
     "nonebot2>=2.0.0",
-    "pydantic>=1.10.4,<2",
+    "pydantic<2,>=1.10.4",
     "nonebot-plugin-alconna>=0.33.8",
+    "humanize>=4.9.0",
 ]
 requires-python = ">=3.8,<4.0"
 readme = "README.md"
