@@ -36,6 +36,8 @@ _✨ 查询 OpenBMCLAPI 状态 ✨_
 
 </div>
 
+** 暂时抽不出空写，请稍后 **
+
 ## 📖 介绍
 
 快速查询 OpenBMCLAPI 数据概览 / 节点信息 / etc.
