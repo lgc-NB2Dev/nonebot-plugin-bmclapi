@@ -1,7 +1,7 @@
 from typing import List
 
 import httpx
-from pydantic import parse_obj_as
+from nonebot.compat import type_validate_python
 
 from .models import NodeInfo, Summary
 
@@ -16,7 +16,7 @@ async def get_summary() -> Summary:
     ) as client:
         resp = await client.get("/dashboard")
         resp.raise_for_status()
-    return parse_obj_as(Summary, resp.json())
+    return type_validate_python(Summary, resp.json())
 
 
 async def get_nodes_info() -> List[NodeInfo]:
@@ -26,4 +26,4 @@ async def get_nodes_info() -> List[NodeInfo]:
     ) as client:
         resp = await client.get("/rank")
         resp.raise_for_status()
-    return parse_obj_as(List[NodeInfo], resp.json())
+    return type_validate_python(List[NodeInfo], resp.json())
