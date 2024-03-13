@@ -8,7 +8,7 @@ authors = [
 ]
 dependencies = [
     "nonebot2>=2.2.0",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "humanize>=4.9.0",
 ]
 requires-python = ">=3.9,<4.0"
